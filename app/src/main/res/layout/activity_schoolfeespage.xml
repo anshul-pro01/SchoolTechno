@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+          android:weightSum="100"
+    android:orientation="vertical"
+    android:background="@color/darkblue"
+    tools:context=".schoolfeespage">
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="10">
+      <TextView
+        android:id="@+id/textfee"
+      android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Remaining Fee:"
+          android:textColor="@color/white"
+
+          android:textSize="18dp"
+          android:layout_margin="@dimen/activity_vertical_margin"/>
+      <TextView
+          android:id="@+id/textremainingfees"
+          android:layout_toRightOf="@+id/textfee"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="@color/white"
+         android:layout_alignBaseline="@+id/textfee"
+          android:layout_marginTop="3dp"
+          android:text="0"/>
+
+  </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/white"
+        android:layout_marginTop="15dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40">
+        <TextView
+           android:id="@+id/textpayfee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pay Fees"
+            android:textSize="21dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"/>
+        <TextView
+           android:id="@+id/textfeetype"
+            android:layout_below="@+id/textpayfee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fee Type:"
+            android:textColor="@color/white"
+           android:textSize="18dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <RadioGroup
+           android:id="@+id/radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+           android:layout_toRightOf="@+id/textfeetype"
+            android:layout_alignBaseline="@id/textfeetype"
+            android:checkedButton="@id/radioschool"
+            android:layout_marginLeft="10dp">
+            <RadioButton
+               android:id="@+id/radioschool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="School"
+
+                android:buttonTint="@color/white"
+
+                android:textColor="@color/white"/>
+            <RadioButton
+                android:id="@+id/radioother"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="other"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"/>
+        </RadioGroup>
+        <TextView
+           android:id="@+id/textamoount"
+            android:layout_below="@id/radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount:"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:id="@+id/textamount"
+           android:layout_toRightOf="@+id/textamoount"
+            android:layout_alignBaseline="@+id/textamoount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginLeft="5dp"
+            android:text="0"
+            />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/white"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40">
+        <TextView
+            android:id="@+id/textpayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment by"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"/>
+        <RadioGroup
+
+            android:id="@+id/radiogrouppayment"
+            android:layout_below="@id/textpayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp">
+
+            <RadioButton
+            android:id="@+id/radiopaytm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paytm"
+            android:buttonTint="@color/white"
+            android:textColor="@color/white"/>
+        <RadioButton
+            android:id="@+id/radiophonepay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phonepay"
+            android:buttonTint="@color/white"
+            android:textColor="@color/white"/>
+            <Button
+                android:id="@+id/pay"
+                android:layout_marginTop="30dp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="pay"
+              android:layout_marginLeft="100dp"></Button>
+    </RadioGroup>
+
+    </RelativeLayout>
+
+</LinearLayout>

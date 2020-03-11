@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back_login">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="45dp">
+
+    <TextView
+        android:id="@+id/remain_fee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@color/red"
+        android:text=" Dear parent,\n   your kid Academic fee is remaining:"
+        android:textColor="@color/white"
+        app:fontFamily="@font/open_sans" />
+    <TextView
+       android:id="@+id/remain_value"
+        android:layout_toRightOf="@+id/remain_fee"
+        android:layout_alignBaseline="@+id/remain_fee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:textColor="@color/white"
+
+        />
+</RelativeLayout>
+    <LinearLayout
+        android:background="@color/colorPrimaryDark"
+        android:padding="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Serial No"
+            android:textColor="#f0e68c"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:fontFamily="@font/merriweather_sans" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Fee Paid Date"
+            android:textColor="#f0e68c"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:fontFamily="@font/merriweather_sans" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Amount"
+            android:textColor="#f0e68c"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:fontFamily="@font/merriweather_sans" />
+    </LinearLayout>
+
+
+    <ListView
+        android:dividerHeight="1.5dp"
+        android:divider="#f0e68c"
+        android:id="@+id/listview_fees"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+    </ListView>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_width="150dp"
+    android:layout_height="120dp"
+    android:background="@drawable/card_gallery"
+    >
+    <ImageView
+        android:background="@drawable/image"
+        android:id="@+id/gallarycontentimage"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"/>
+    <VideoView
+        android:background="@drawable/video"
+        android:visibility="gone"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/video"
+        android:layout_margin="2dp"/>
+   <!-- <TextView
+       android:id="@+id/gallarycontentimagename"
+        android:layout_below="@+id/gallarycontentimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="17dp"
+        android:text="name"/>-->
+
+</RelativeLayout>
+</RelativeLayout>

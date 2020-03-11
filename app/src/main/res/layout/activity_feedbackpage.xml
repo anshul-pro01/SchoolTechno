@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".feedbackpage"
+    android:background="@drawable/back_circ_desc">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <TextView
+            android:id="@+id/textnote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:padding="10dp"
+            android:text="Your feedback is important to us,please fill in box below with your query and we'll get right back to you."
+            android:textColor="	#00FF7F"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:fontFamily="@font/open_sans" />
+
+        <RelativeLayout
+            android:id="@+id/feedd"
+            android:layout_marginTop="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textnote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:id="@+id/textfeedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Enter your feedback:"
+                android:textColor="#f0e68c"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:fontFamily="@font/rubik" />
+         <EditText
+             android:layout_marginTop="15dp"
+             android:id="@+id/editfeedback"
+             android:layout_below="@id/textfeedback"
+             android:layout_width="340dp"
+             android:layout_height="100dp"
+             android:layout_weight="1"
+             android:hint="Feedback here...."
+             android:textColorHint="#22F9BD"
+             android:ems="10"
+             android:padding="10dp"
+             android:textSize="15dp"
+             android:textStyle="bold"
+             android:textAllCaps="false"
+             android:textColor="#a8e063"
+             android:inputType="textMultiLine"
+             android:lines="5"
+             android:background="@drawable/feedbackborder"
+
+          />
+
+        </RelativeLayout>
+
+
+         <Button
+          android:id="@+id/submit"
+             android:layout_below="@+id/feedd"
+             android:layout_width="wrap_content"
+             android:layout_height="45dp"
+             android:layout_marginTop="20dp"
+             android:text="Submit"
+             android:background="@drawable/btn_download"
+             android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+
+
+
+
+
+
+</LinearLayout>

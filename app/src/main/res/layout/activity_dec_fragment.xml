@@ -1,0 +1,988 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DecFragment"
+    android:background="@drawable/back_login">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:id="@+id/dec"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/back_login">
+
+            <RelativeLayout
+                android:id="@+id/dece"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/dece_card"
+                    android:layout_width="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="50dp"
+                    android:background="@drawable/but_diary"
+                    app:cardBackgroundColor="@color/colorPrimaryDark">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/but_diary">
+
+                        <TextView
+                            android:id="@+id/dece_subject"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="monospace"
+                            android:text="D E C E M B E R  2 0 1 9"
+                            android:textAlignment="center"
+                            android:textColor="#f0e68c"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            app:fontFamily="@font/roboto" />
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/dece_act1"
+                    android:layout_width="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/but_diary"
+                    android:layout_below="@id/dece_card"
+                    app:cardBackgroundColor="#ffffff">
+
+                    <TextView
+                        android:id="@+id/dece_serial1"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="7dp"
+                        android:fontFamily="sans-serif"
+                        android:padding="5dp"
+                        android:text="02"
+                        android:textColor="#f0e68c"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/btn_circular_diary"/>
+
+                    <TextView
+                        android:id="@+id/dece_label11"
+                        android:layout_width="70dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="10dp"
+                        android:text="DEC"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="13dp"
+                        app:fontFamily="@font/prompt" />
+
+                    <TextView
+                        android:id="@+id/dece_label12"
+                        android:layout_width="80dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="27dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="10dp"
+                        android:text="Monday"
+                        android:textColor="#858585  "
+                        android:textSize="13dp"
+                        app:fontFamily="@font/work_sans" />
+
+                    <TextView
+                        android:id="@+id/dece_act1_info"
+                        android:layout_width="245dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:text="2nd Term Starts"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        app:fontFamily="@font/open_sans" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/dece_act2"
+                    android:layout_width="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/but_diary"
+                    android:layout_below="@id/dece_act1"
+                    app:cardBackgroundColor="#ffffff">
+
+                    <TextView
+                        android:id="@+id/dece_serial2"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="7dp"
+                        android:fontFamily="sans-serif"
+                        android:padding="5dp"
+                        android:text="21"
+                        android:textColor="#f0e68c"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/btn_circular_diary"/>
+
+                    <TextView
+                        android:id="@+id/dece_label21"
+                        android:layout_width="70dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="10dp"
+                        android:text="DEC"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="13dp"
+                        app:fontFamily="@font/prompt" />
+
+                    <TextView
+                        android:id="@+id/dece_label22"
+                        android:layout_width="80dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="27dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="10dp"
+                        android:text="Saturday"
+                        android:textColor="#858585  "
+                        android:textSize="13dp"
+                        app:fontFamily="@font/work_sans" />
+
+                    <TextView
+                        android:id="@+id/dece_act2_info"
+                        android:layout_width="245dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Parents Meeting"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        app:fontFamily="@font/open_sans" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/dece_act3"
+                    android:layout_width="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/but_diary"
+                    android:layout_below="@id/dece_act2"
+                    app:cardBackgroundColor="#ffffff">
+
+                    <TextView
+                        android:id="@+id/dece_serial3"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="7dp"
+                        android:fontFamily="sans-serif"
+                        android:padding="5dp"
+                        android:text="24"
+                        android:textColor="#f0e68c"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/btn_circular_diary"/>
+
+                    <TextView
+                        android:id="@+id/dece_label31"
+                        android:layout_width="70dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="10dp"
+                        android:text="DEC"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="13dp"
+                        app:fontFamily="@font/prompt" />
+
+                    <TextView
+                        android:id="@+id/dece_label32"
+                        android:layout_width="80dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="27dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="10dp"
+                        android:text="Tuedsay"
+                        android:textColor="#858585  "
+                        android:textSize="13dp"
+                        app:fontFamily="@font/work_sans" />
+
+                    <TextView
+                        android:id="@+id/dece_act3_info"
+                        android:layout_width="245dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Vacation Starts"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        app:fontFamily="@font/open_sans" />
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/dece_act4"
+                    android:layout_width="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/but_diary"
+                    android:layout_below="@id/dece_act3"
+                    app:cardBackgroundColor="#ffffff">
+
+                    <TextView
+                        android:id="@+id/dece_serial4"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="7dp"
+                        android:fontFamily="sans-serif"
+                        android:padding="5dp"
+                        android:text="25"
+                        android:textColor="#f0e68c"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/btn_circular_holi"/>
+
+                    <TextView
+                        android:id="@+id/dece_label41"
+                        android:layout_width="70dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="10dp"
+                        android:text="DEC"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="13dp"
+                        app:fontFamily="@font/prompt" />
+
+                    <TextView
+                        android:id="@+id/dece_label42"
+                        android:layout_width="85dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="27dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="10dp"
+                        android:text="Wednesday"
+                        android:textColor="#858585  "
+                        android:textSize="13dp"
+                        app:fontFamily="@font/work_sans" />
+
+                    <TextView
+                        android:id="@+id/dece_act4_info"
+                        android:layout_width="245dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Christmas"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        app:fontFamily="@font/open_sans" />
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/jan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/dece"
+                >
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/janu_card"
+                    android:layout_width="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/but_diary"
+                    app:cardBackgroundColor="@color/colorPrimaryDark">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/but_diary">
+
+                        <TextView
+                            android:id="@+id/janu_subject"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="monospace"
+                            android:text="J A N U A R Y  2 0 2 0 "
+                            android:textAlignment="center"
+                            android:textColor="#f0e68c"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            app:fontFamily="@font/roboto" />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/janu_act1"
+                    android:layout_width="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/but_diary"
+                    android:layout_below="@id/janu_card"
+                    app:cardBackgroundColor="#ffffff">
+
+                    <TextView
+                        android:id="@+id/janu_serial1"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="7dp"
+                        android:fontFamily="sans-serif"
+                        android:padding="5dp"
+                        android:text="01"
+                        android:textColor="#f0e68c"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/btn_circular_holi"/>
+
+                    <TextView
+                        android:id="@+id/janu_label11"
+                        android:layout_width="70dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="10dp"
+                        android:text="JAN"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="13dp"
+                        app:fontFamily="@font/prompt" />
+
+                    <TextView
+                        android:id="@+id/janu_label12"
+                        android:layout_width="85dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="27dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="10dp"
+                        android:text="Wednesday"
+                        android:textColor="#858585  "
+                        android:textSize="13dp"
+                        app:fontFamily="@font/work_sans" />
+
+                    <TextView
+                        android:id="@+id/janu_act1_info"
+                        android:layout_width="245dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:text="New Year Day"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        app:fontFamily="@font/open_sans" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/janu_act2"
+                    android:layout_width="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/but_diary"
+                    android:layout_below="@id/janu_act1"
+                    app:cardBackgroundColor="#ffffff">
+
+                    <TextView
+                        android:id="@+id/janu_serial2"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="7dp"
+                        android:fontFamily="sans-serif"
+                        android:padding="5dp"
+                        android:text="02"
+                        android:textColor="#f0e68c"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/btn_circular_diary"/>
+
+                    <TextView
+                        android:id="@+id/janu_label21"
+                        android:layout_width="70dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="10dp"
+                        android:text="JAN"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="13dp"
+                        app:fontFamily="@font/prompt" />
+
+                    <TextView
+                        android:id="@+id/janu_label22"
+                        android:layout_width="80dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="27dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="10dp"
+                        android:text="Thursday"
+                        android:textColor="#858585  "
+                        android:textSize="13dp"
+                        app:fontFamily="@font/work_sans" />
+
+                    <TextView
+                        android:id="@+id/janu_act2_info"
+                        android:layout_width="245dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:text="School Reopens"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        app:fontFamily="@font/open_sans" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/janu_act3"
+                    android:layout_width="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/but_diary"
+                    android:layout_below="@id/janu_act2"
+                    app:cardBackgroundColor="#ffffff">
+
+                    <TextView
+                        android:id="@+id/janu_serial3"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="7dp"
+                        android:fontFamily="sans-serif"
+                        android:padding="5dp"
+                        android:text="06"
+                        android:textColor="#f0e68c"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/btn_circular_diary"/>
+
+                    <TextView
+                        android:id="@+id/janu_label31"
+                        android:layout_width="70dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="10dp"
+                        android:text="JAN"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="13dp"
+                        app:fontFamily="@font/prompt" />
+
+                    <TextView
+                        android:id="@+id/janu_label32"
+                        android:layout_width="80dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="27dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="10dp"
+                        android:text="Monday"
+                        android:textColor="#858585  "
+                        android:textSize="13dp"
+                        app:fontFamily="@font/work_sans" />
+
+                    <TextView
+                        android:id="@+id/janu_act3_info"
+                        android:layout_width="245dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Mid Sem Starts"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        app:fontFamily="@font/open_sans" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/janu_act4"
+                    android:layout_width="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/but_diary"
+                    android:layout_below="@id/janu_act3"
+                    app:cardBackgroundColor="#ffffff">
+
+                    <TextView
+                        android:id="@+id/janu_serial4"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="7dp"
+                        android:fontFamily="sans-serif"
+                        android:padding="5dp"
+                        android:text="15"
+                        android:textColor="#f0e68c"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/btn_circular_holi"/>
+
+                    <TextView
+                        android:id="@+id/janu_label41"
+                        android:layout_width="70dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="10dp"
+                        android:text="JAN"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="13dp"
+                        app:fontFamily="@font/prompt" />
+
+                    <TextView
+                        android:id="@+id/janu_label42"
+                        android:layout_width="85dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="27dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="10dp"
+                        android:text="Wednesday"
+                        android:textColor="#858585  "
+                        android:textSize="13dp"
+                        app:fontFamily="@font/work_sans" />
+
+                    <TextView
+                        android:id="@+id/janu_act4_info"
+                        android:layout_width="245dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Makar Sankranti"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        app:fontFamily="@font/open_sans" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/janu_act5"
+                    android:layout_width="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/but_diary"
+                    android:layout_below="@id/janu_act4"
+                    app:cardBackgroundColor="#ffffff">
+
+                    <TextView
+                        android:id="@+id/janu_serial5"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="7dp"
+                        android:fontFamily="sans-serif"
+                        android:padding="5dp"
+                        android:text="20"
+                        android:textColor="#f0e68c"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/btn_circular_diary"/>
+
+                    <TextView
+                        android:id="@+id/janu_label51"
+                        android:layout_width="70dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="10dp"
+                        android:text="JAN"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="13dp"
+                        app:fontFamily="@font/prompt" />
+
+                    <TextView
+                        android:id="@+id/janu_label52"
+                        android:layout_width="80dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="27dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="10dp"
+                        android:text="Monday"
+                        android:textColor="#858585  "
+                        android:textSize="13dp"
+                        app:fontFamily="@font/work_sans" />
+
+                    <TextView
+                        android:id="@+id/janu_act5_info"
+                        android:layout_width="245dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Mid Sem Ends"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        app:fontFamily="@font/open_sans" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/janu_act6"
+                    android:layout_width="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/but_diary"
+                    android:layout_below="@id/janu_act5"
+                    app:cardBackgroundColor="#ffffff">
+
+                    <TextView
+                        android:id="@+id/janu_serial6"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="7dp"
+                        android:fontFamily="sans-serif"
+                        android:padding="5dp"
+                        android:text="26"
+                        android:textColor="#f0e68c"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/btn_circular_holi"/>
+
+                    <TextView
+                        android:id="@+id/janu_label61"
+                        android:layout_width="70dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="10dp"
+                        android:text="JAN"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="13dp"
+                        app:fontFamily="@font/prompt" />
+
+                    <TextView
+                        android:id="@+id/janu_label62"
+                        android:layout_width="80dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="27dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="10dp"
+                        android:text="Sunday"
+                        android:textColor="#858585  "
+                        android:textSize="13dp"
+                        app:fontFamily="@font/work_sans" />
+
+                    <TextView
+                        android:id="@+id/janu_act6_info"
+                        android:layout_width="245dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Republic Day"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        app:fontFamily="@font/open_sans" />
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/feb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@id/jan"
+                >
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/febr_card"
+                    android:layout_width="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/but_diary"
+                    app:cardBackgroundColor="@color/colorPrimaryDark">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/but_diary">
+
+                        <TextView
+                            android:id="@+id/febr_subject"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="monospace"
+                            android:text="F E B R U A R Y  2 0 2 0"
+                            android:textAlignment="center"
+                            android:textColor="#f0e68c"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            app:fontFamily="@font/roboto" />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/febr_act1"
+                    android:layout_width="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/but_diary"
+                    android:layout_below="@id/febr_card"
+                    app:cardBackgroundColor="#ffffff">
+
+                    <TextView
+                        android:id="@+id/febr_serial1"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="7dp"
+                        android:fontFamily="sans-serif"
+                        android:padding="5dp"
+                        android:text="19"
+                        android:textColor="#f0e68c"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/btn_circular_holi"/>
+
+                    <TextView
+                        android:id="@+id/febr_label11"
+                        android:layout_width="70dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="10dp"
+                        android:text="FEB"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="13dp"
+                        app:fontFamily="@font/prompt" />
+
+                    <TextView
+                        android:id="@+id/febr_label12"
+                        android:layout_width="85dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="27dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="10dp"
+                        android:text="Wednesday"
+                        android:textColor="#858585  "
+                        android:textSize="13dp"
+                        app:fontFamily="@font/work_sans" />
+
+                    <TextView
+                        android:id="@+id/febr_act1_info"
+                        android:layout_width="245dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Shiv Jayanti"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        app:fontFamily="@font/open_sans" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/febr_act2"
+                    android:layout_width="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/but_diary"
+                    android:layout_below="@id/febr_act1"
+                    app:cardBackgroundColor="#ffffff">
+
+                    <TextView
+                        android:id="@+id/febr_serial2"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="7dp"
+                        android:fontFamily="sans-serif"
+                        android:padding="5dp"
+                        android:text="21"
+                        android:textColor="#f0e68c"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/btn_circular_diary"/>
+
+                    <TextView
+                        android:id="@+id/febr_label21"
+                        android:layout_width="70dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="10dp"
+                        android:text="FEB"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="13dp"
+                        app:fontFamily="@font/prompt" />
+
+                    <TextView
+                        android:id="@+id/febr_label22"
+                        android:layout_width="80dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="27dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="10dp"
+                        android:text="Friday"
+                        android:textColor="#858585  "
+                        android:textSize="13dp"
+                        app:fontFamily="@font/work_sans" />
+
+                    <TextView
+                        android:id="@+id/febr_act2_info"
+                        android:layout_width="245dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Mahashivratri"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        app:fontFamily="@font/open_sans" />
+
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</FrameLayout>

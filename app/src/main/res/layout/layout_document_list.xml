@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+       android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="60dp"
+      app:cardCornerRadius="12dp"
+        app:cardBackgroundColor="@color/darkblue"
+        >
+      <!--  app:cardBackgroundColor="#F5FFFA"-->
+
+
+
+
+        <LinearLayout
+            android:background="@drawable/but_doc"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/index"
+                android:layout_width="15dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif"
+
+                android:gravity="center"
+                android:text="date"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:fontFamily="@font/merriweather">
+
+            </TextView>
+              <!-- android:background="@drawable/doc_round"
+                  android:textColor="#f0e68c"
+              -->
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:text="tittle"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="normal"
+
+
+                app:fontFamily="@font/work_sans" />
+            <!-- android:textColor="#236D74"-->
+            <LinearLayout
+                android:layout_width="10dp"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@mipmap/pdf"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

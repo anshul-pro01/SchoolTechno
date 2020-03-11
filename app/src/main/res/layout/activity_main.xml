@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".MainActivity"
+    android:background="@drawable/back_login">
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+    </LinearLayout>
+    <RelativeLayout
+         android:id="@+id/relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="52"
+        android:layout_gravity="center"
+        android:background="@drawable/but_doc"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+
+        <TextView
+            android:id="@+id/textparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Parent login"
+            android:textAlignment="center"
+            android:textColor="#DCF8EF"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            app:fontFamily="@font/montserrat" />
+
+        <TextView
+            android:id="@+id/textparentemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textparent"
+            android:layout_alignLeft="@+id/editemail"
+            android:layout_marginTop="25dp"
+            android:text="Mobile Number"
+            android:textColor="#00FF7F"
+            android:textStyle="bold"
+            app:fontFamily="@font/open_sans" />
+        <EditText
+            android:layout_below="@+id/textparentemail"
+            android:id="@+id/editemail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="@drawable/but_login_edit"
+            android:hint="Mobile no"
+            android:textColor="@android:color/black"
+            android:textSize="15dp"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/textpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editemail"
+            android:layout_alignLeft="@+id/editemail"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:text="Password"
+            android:textColor="#00FF7F"
+            android:textStyle="bold"
+            app:fontFamily="@font/open_sans" />
+        <EditText
+
+            android:id="@+id/editpassword"
+           android:layout_below="@+id/textpassword"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/black"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="@drawable/but_login_edit"
+            android:hint="Password"
+            android:textSize="15dp"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/txtforget"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editpassword"
+            android:layout_alignEnd="@id/editpassword"
+            android:layout_alignRight="@id/editpassword"
+            android:layout_marginTop="15dp"
+            android:text="Forgot password ?"
+            android:textColor="#FF5733"
+            app:fontFamily="@font/roboto" />
+        <Button
+
+          android:id="@+id/buttonlogin"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/txtforget"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="#FEE2F8"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/but_login"/>
+    </RelativeLayout>
+
+  <!--  <TextView
+        android:id="@+id/timepass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />-->
+
+
+</LinearLayout>

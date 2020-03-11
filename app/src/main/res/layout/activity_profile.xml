@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".profile"
+    android:background="@drawable/but_profile">
+    <LinearLayout
+        android:id="@+id/profileimage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/but_profile">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@mipmap/parent_icon"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f0e68c"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+
+        android:background="@drawable/but_profile">
+
+        <TextView
+            android:id="@+id/pname"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:text="Name"
+            android:textColor="#f0e68c"
+            android:textSize="20dp"
+            app:fontFamily="@font/work_sans" />
+
+        <TextView
+            android:id="@+id/textpname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/pname"
+            android:text="name"
+            android:textColor="#FEE2F8"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:fontFamily="@font/source_sans_pro" />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f0e68c"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+
+        android:background="@drawable/but_profile">
+
+        <TextView
+            android:id="@+id/pemail"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:text="Email"
+            android:textColor="#f0e68c"
+            android:textSize="20dp"
+            app:fontFamily="@font/work_sans" />
+
+        <TextView
+            android:id="@+id/textpemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/pemail"
+            android:text="email"
+            android:textColor="#FEE2F8"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:fontFamily="@font/source_sans_pro" />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f0e68c"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+
+        android:background="@drawable/but_profile">
+
+        <TextView
+            android:id="@+id/paddress"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:text="Address"
+            android:textColor="#f0e68c"
+            android:textSize="20dp"
+            app:fontFamily="@font/work_sans" />
+
+        <TextView
+            android:id="@+id/textpaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/paddress"
+            android:text="Address"
+            android:textColor="#FEE2F8"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:fontFamily="@font/source_sans_pro" />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f0e68c"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+
+        android:background="@drawable/but_profile">
+
+        <TextView
+            android:id="@+id/pcontact"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:text="Contact"
+            android:textColor="#f0e68c"
+            android:textSize="20dp"
+            app:fontFamily="@font/work_sans" />
+
+        <TextView
+            android:id="@+id/textpcontact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/pcontact"
+            android:text="contact"
+            android:textColor="#FEE2F8"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:fontFamily="@font/source_sans_pro" />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f0e68c"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+
+        android:background="@drawable/but_profile">
+
+        <TextView
+            android:id="@+id/pgender"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:text="Gender"
+            android:textColor="#f0e68c"
+            android:textSize="20dp"
+            app:fontFamily="@font/work_sans" />
+
+        <TextView
+            android:id="@+id/textpgender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/pgender"
+            android:gravity="center"
+            android:text="Gender"
+            android:textColor="#FEE2F8"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:fontFamily="@font/source_sans_pro" />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f0e68c"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+
+</LinearLayout>

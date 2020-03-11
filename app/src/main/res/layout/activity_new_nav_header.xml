@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:gravity="bottom"
+    android:padding="10dp"
+    android:background="@drawable/back_circ_desc"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    tools:context=".New_nav_header">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/image"
+        android:layout_marginLeft="20dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/user_icon"/>
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="Welcome ,"
+            android:textAllCaps="false"
+            android:textColor="#f0e68c"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            app:fontFamily="@font/merriweather_italic" />
+
+        <TextView
+            android:id="@+id/new_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@+id/welcome"
+            android:padding="5dp"
+            android:text="username"
+            android:textAllCaps="false"
+            android:textColor="#f0e68c"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            app:fontFamily="@font/merriweather_sans" />
+
+        <TextView
+            android:id="@+id/new_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/welcome"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="abc@gmail.com"
+            android:textAllCaps="false"
+            android:textColor="#c2ba63"
+            android:textSize="17dp"
+            android:textStyle="normal"
+            app:fontFamily="@font/rubik" />
+    </RelativeLayout>
+
+</LinearLayout>

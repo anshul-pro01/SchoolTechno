@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Result">
+
+    <RelativeLayout
+        android:id="@+id/exam"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/back_login">
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/result_info"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:cardCornerRadius="12dp"
+            android:layout_height="105dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/but_diary"
+            app:cardBackgroundColor="#F8EAFB">
+
+            <TextView
+                android:id="@+id/result_info1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="left"
+                android:layout_marginTop="23dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/ic_school_black_24dp"/>
+
+            <TextView
+                android:id="@+id/label1"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="10dp"
+                android:text="Candidate Name"
+                android:textColor="#858585"
+                android:textSize="13dp"
+                app:fontFamily="@font/prompt" />
+
+            <TextView
+                android:id="@+id/name_can"
+                android:layout_width="250dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="33dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="10dp"
+                android:text="Mr XYZ"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:fontFamily="@font/merriweather_sans" />
+
+            <TextView
+                android:id="@+id/label2"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="10dp"
+                android:text="Roll Number"
+                android:textColor="#858585"
+                android:textSize="13dp"
+                app:fontFamily="@font/prompt" />
+
+            <TextView
+                android:id="@+id/rollno"
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="78dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="10dp"
+                android:text="XXXXXXX"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:fontFamily="@font/merriweather_sans" />
+
+            <TextView
+                android:id="@+id/label3"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="10dp"
+                android:text="Result"
+                android:textColor="#858585"
+                android:textSize="13dp"
+                app:fontFamily="@font/prompt" />
+
+            <TextView
+                android:id="@+id/pass_fail"
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="78dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="10dp"
+                android:text="PASS"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:fontFamily="@font/merriweather_sans" />
+
+        </android.support.v7.widget.CardView>
+
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/result_info"
+        android:layout_marginTop="5dp">
+
+        <RelativeLayout
+            android:id="@+id/end"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/back_circ_desc">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/header_card"
+                android:layout_width="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_height="50dp"
+                android:background="@drawable/but_diary"
+                app:cardBackgroundColor="@color/colorPrimary">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/but_diary">
+
+                    <TextView
+                        android:id="@+id/header_subject"
+                        android:layout_width="200dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Subject"
+                        android:textAlignment="center"
+                        android:textColor="#f0e68c"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/header_grade"
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Overall"
+                        android:textAlignment="center"
+                        android:textColor="#f0e68c"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <!--<TextView
+                        android:id="@+id/endsem_label"
+                        android:layout_width="70dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="80dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="EndSem"
+                        android:textAlignment="center"
+                        android:textColor="#f0e68c"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/midsem_label"
+                        android:layout_width="70dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="150dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="MidSem"
+                        android:textAlignment="center"
+                        android:textColor="#f0e68c"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />-->
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/result_list"
+                android:layout_below="@+id/header_card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
+
+            <!--<android.support.v7.widget.CardView
+                android:id="@+id/sub_card1"
+                android:layout_width="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/but_diary"
+                android:layout_below="@id/header_card"
+                app:cardBackgroundColor="#F8EAFB">
+
+                <TextView
+                    android:id="@+id/sub1_card1"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="15dp"
+                    android:text="English"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"
+                    android:fontFamily="sans-serif"/>
+
+                <TextView
+                    android:id="@+id/sub_card1_overallgrade"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="A+"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"/>
+
+                <TextView
+                    android:id="@+id/sub_card1_endgrade"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="85dp"
+                    android:layout_marginTop="10dp"
+                    android:text="A+"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"/>
+
+                <TextView
+                    android:id="@+id/sub_card1_midgrade"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="150dp"
+                    android:layout_marginTop="10dp"
+                    android:text="A+"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"/>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/sub_card2"
+                android:layout_width="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/but_diary"
+                android:layout_below="@id/sub_card1"
+                app:cardBackgroundColor="#F8EAFB">
+
+                <TextView
+                    android:id="@+id/sub1_card2"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="15dp"
+                    android:text="Hindi"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"
+                    android:fontFamily="sans-serif"/>
+
+                <TextView
+                    android:id="@+id/sub_card2_overallgrade"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="A"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"/>
+
+                <TextView
+                    android:id="@+id/sub_card2_endgrade"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="85dp"
+                    android:layout_marginTop="10dp"
+                    android:text="A"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"/>
+
+                <TextView
+                    android:id="@+id/sub_card2_midgrade"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="150dp"
+                    android:layout_marginTop="10dp"
+                    android:text="A"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/sub_card3"
+                android:layout_width="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/but_diary"
+                android:layout_below="@id/sub_card2"
+                app:cardBackgroundColor="#F8EAFB">
+
+                <TextView
+                    android:id="@+id/sub1_card3"
+                    android:layout_width="150dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="15dp"
+                    android:text="Mathematics"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"
+                    android:fontFamily="sans-serif"/>
+
+                <TextView
+                    android:id="@+id/sub_card3_overallgrade"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="A+"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"/>
+
+                <TextView
+                    android:id="@+id/sub_card3_endgrade"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="85dp"
+                    android:layout_marginTop="10dp"
+                    android:text="A+"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"/>
+
+                <TextView
+                    android:id="@+id/sub_card3_midgrade"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="150dp"
+                    android:layout_marginTop="10dp"
+                    android:text="A+"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/sub_card4"
+                android:layout_width="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/but_diary"
+                android:layout_below="@id/sub_card3"
+                app:cardBackgroundColor="#F8EAFB">
+
+                <TextView
+                    android:id="@+id/sub1_card4"
+                    android:layout_width="150dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="15dp"
+                    android:text="Science"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"
+                    android:fontFamily="sans-serif"/>
+
+                <TextView
+                    android:id="@+id/sub_card4_overallgrade"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="A+"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"/>
+
+                <TextView
+                    android:id="@+id/sub_card4_endgrade"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="85dp"
+                    android:layout_marginTop="10dp"
+                    android:text="A+"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"/>
+
+                <TextView
+                    android:id="@+id/sub_card4_midgrade"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="150dp"
+                    android:layout_marginTop="10dp"
+                    android:text="A+"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/sub_card5"
+                android:layout_width="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/but_diary"
+                android:layout_below="@id/sub_card4"
+                app:cardBackgroundColor="#F8EAFB">
+
+                <TextView
+                    android:id="@+id/sub1_card5"
+                    android:layout_width="150dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="15dp"
+                    android:text="Social Science"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"
+                    android:fontFamily="sans-serif"/>
+
+                <TextView
+                    android:id="@+id/sub_card5_overallgrade"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="A+"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"/>
+
+                <TextView
+                    android:id="@+id/sub_card5_endgrade"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="85dp"
+                    android:layout_marginTop="10dp"
+                    android:text="A+"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"/>
+
+                <TextView
+                    android:id="@+id/sub_card5_midgrade"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="150dp"
+                    android:layout_marginTop="10dp"
+                    android:text="A"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"/>
+            </android.support.v7.widget.CardView>-->
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/overall_grade"
+                android:layout_width="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/but_diary"
+                android:layout_below="@id/result_list"
+                app:cardBackgroundColor="#F8EAFB">
+
+                <TextView
+                    android:id="@+id/overall_label"
+                    android:layout_width="200dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif"
+                    android:text="OVERALL GRADE"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/rubik" />
+
+                <TextView
+                    android:id="@+id/overall_grade1"
+                    android:layout_width="60dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="50dp"
+                    android:fontFamily="sans-serif"
+                    android:text="A+"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/nunito" />
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/percentage"
+                android:layout_width="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/but_diary"
+                android:layout_below="@id/overall_grade"
+                app:cardBackgroundColor="#F8EAFB">
+
+                <TextView
+                    android:id="@+id/percentage_header"
+                    android:layout_width="200dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif"
+                    android:text="PERCENTAGE"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/rubik" />
+
+                <TextView
+                    android:id="@+id/value_percent"
+                    android:layout_width="60dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="50dp"
+                    android:fontFamily="sans-serif"
+                    android:text="93.10"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/nunito" />
+
+                <TextView
+                    android:id="@+id/symbol_percent"
+                    android:layout_width="20dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:fontFamily="sans-serif"
+                    android:text="%"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/nunito" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/remarks"
+                android:layout_width="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/but_diary"
+                android:layout_below="@id/percentage"
+                app:cardBackgroundColor="#F8EAFB">
+
+                <TextView
+                    android:id="@+id/remarks_header"
+                    android:layout_width="200dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif"
+                    android:text="REMARKS"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/rubik" />
+
+                <TextView
+                    android:id="@+id/remarks_info"
+                    android:layout_width="60dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="50dp"
+                    android:fontFamily="sans-serif"
+                    android:text="PASS"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"
+                    app:fontFamily="@font/nunito" />
+
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+
+    </ScrollView>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

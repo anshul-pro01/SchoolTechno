@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".listdisplay"
+    android:background="@drawable/back_login">
+<RelativeLayout
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="150dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/but_doc"
+   >
+
+    <TextView
+        android:id="@+id/textparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Modify Password"
+        android:textAlignment="center"
+        android:textColor="#DCF8EF"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        app:fontFamily="@font/montserrat" />
+
+    <EditText
+        android:layout_below="@+id/textparent"
+       android:id="@+id/editoldpassword"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Old Password"
+        android:paddingLeft="10dp"
+        android:textColor="#00FF7F"
+        android:textColorHint="#00FF7F"/>
+    <EditText
+        android:id="@+id/editnewpassword"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_below="@+id/editoldpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="New Password"
+        android:paddingLeft="10dp"
+        android:textColor="#00FF7F"
+        android:textColorHint="#00FF7F"/>
+    <EditText
+        android:id="@+id/editconfirmpassword"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_below="@+id/editnewpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:paddingLeft="10dp"
+        android:textColor="#00FF7F"
+        android:textColorHint="#00FF7F"/>
+    <Button
+        android:id="@+id/change"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/editconfirmpassword"
+        android:background="@drawable/but_login"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="360dp"
+        android:layout_height="55dp"
+        android:text="Change Password"
+        android:textColor="#FEE2F8"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
+
+</RelativeLayout>

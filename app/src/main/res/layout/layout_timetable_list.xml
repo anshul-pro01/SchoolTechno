@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="4dp">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/thu_time1"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="60dp"
+        android:background="@drawable/but_dashboard"
+        app:cardCornerRadius="5dp"
+        app:cardBackgroundColor="@color/colorPrimaryDark">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/but_doc">
+
+            <TextView
+                android:id="@+id/sub_time"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="10dp"
+                android:text="time"
+                android:textColor="#DCF8EF"
+                android:textSize="17dp"
+                app:fontFamily="@font/rubik" />
+
+            <TextView
+                android:id="@+id/sub_name"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="7dp"
+                android:text="Subject"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:fontFamily="@font/poppins" />
+
+            <TextView
+                android:id="@+id/teacher_name"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:text="teacher"
+                android:textAlignment="center"
+                android:textColor="#FEE2F8"
+                android:textSize="17dp"
+
+                app:fontFamily="@font/lato" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

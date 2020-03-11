@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".examschedulepage"
+    android:background="@drawable/back_login">
+
+
+    <!--<RelativeLayout
+        android:id="@+id/exam"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/back_login">
+        >
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/exam1"
+            android:elevation="4dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:cardCornerRadius="12dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/but_doc"
+            app:cardBackgroundColor="#42275a">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/but_doc">
+
+            <TextView
+                android:id="@+id/exam1date"
+                android:layout_width="260dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="10dp"
+                android:text="FROM:-14-Aug-18    TO:-20-Aug-18"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/exam1info"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="3dp"
+                android:text="STD I 1st Term (2019-20) Mid Sem Time Table"
+                android:textColor="#f0e68c"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/btn_info1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/ic_priority_high_black_24dp"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/exam2"
+            android:elevation="4dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:cardCornerRadius="12dp"
+            android:layout_height="90dp"
+            android:layout_below="@id/exam1"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/but_doc"
+            app:cardBackgroundColor="#42275a">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/but_doc">
+
+            <TextView
+                android:id="@+id/exam2date"
+                android:layout_width="260dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="10dp"
+                android:text="FROM:-14-Aug-18    TO:-20-Aug-18"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/exam2info"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="3dp"
+                android:text="STD II 1st Term (2019-20) Mid Sem Time Table"
+                android:textColor="#f0e68c"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/btn_info2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/ic_priority_high_black_24dp" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/exam3"
+            android:elevation="4dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:cardCornerRadius="12dp"
+            android:layout_height="90dp"
+            android:layout_below="@id/exam2"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/but_doc"
+            app:cardBackgroundColor="#42275a">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/but_doc">
+
+            <TextView
+                android:id="@+id/exam3date"
+                android:layout_width="260dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="10dp"
+                android:text="FROM:-14-Aug-18    TO:-25-Aug-18"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/exam3info"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="3dp"
+                android:text="STD III 1st Term (2019-20) Mid Sem Time Table"
+                android:textColor="#f0e68c"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/btn_info3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/ic_priority_high_black_24dp"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/exam4"
+            android:elevation="4dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:cardCornerRadius="12dp"
+            android:layout_height="90dp"
+            android:layout_below="@id/exam3"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/but_doc"
+            app:cardBackgroundColor="#42275a">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/but_doc">
+
+            <TextView
+                android:id="@+id/exam4date"
+                android:layout_width="260dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="10dp"
+                android:text="FROM:-14-Aug-18    TO:-25-Aug-18"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/exam4info"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="3dp"
+                android:text="STD IV 1st Term (2019-20) Mid Sem Time Table"
+                android:textColor="#f0e68c"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/btn_info4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/ic_priority_high_black_24dp"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/examschedule_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+
+    <!--<ListView
+        android:id="@+id/list_examschedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>-->
+</RelativeLayout>

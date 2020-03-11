@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MarFragment"
+    android:background="@drawable/back_login">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:id="@+id/mar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/back_login">
+
+            <RelativeLayout
+                android:id="@+id/march"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/march_card"
+                    android:layout_width="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="50dp"
+                    android:background="@drawable/but_diary"
+                    app:cardBackgroundColor="@color/colorPrimaryDark">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/but_diary">
+
+                        <TextView
+                            android:id="@+id/march_subject"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="monospace"
+                            android:text="M A R C H  2 0 2 0"
+                            android:textAlignment="center"
+                            android:textColor="#f0e68c"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            app:fontFamily="@font/roboto" />
+
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/march_act1"
+                    android:layout_width="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/but_diary"
+                    android:layout_below="@id/march_card"
+                    app:cardBackgroundColor="#ffffff">
+
+                    <TextView
+                        android:id="@+id/march_serial1"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="7dp"
+                        android:fontFamily="sans-serif"
+                        android:padding="5dp"
+                        android:text="10"
+                        android:textColor="#f0e68c"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/btn_circular_holi"/>
+
+                    <TextView
+                        android:id="@+id/march_label11"
+                        android:layout_width="70dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="10dp"
+                        android:text="MAR"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="13dp"
+                        app:fontFamily="@font/prompt" />
+
+                    <TextView
+                        android:id="@+id/march_label12"
+                        android:layout_width="80dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="27dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="10dp"
+                        android:text="Tuesday"
+                        android:textColor="#858585  "
+                        android:textSize="13dp"
+                        app:fontFamily="@font/work_sans" />
+
+                    <TextView
+                        android:id="@+id/march_act1_info"
+                        android:layout_width="245dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Holi"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        app:fontFamily="@font/open_sans" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/march_act2"
+                    android:layout_width="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/but_diary"
+                    android:layout_below="@id/march_act1"
+                    app:cardBackgroundColor="#ffffff">
+
+                    <TextView
+                        android:id="@+id/march_serial2"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/btn_circular_holi"
+                        android:fontFamily="sans-serif"
+                        android:padding="5dp"
+                        android:text="25"
+                        android:textAlignment="center"
+                        android:textColor="#f0e68c"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/march_label21"
+                        android:layout_width="70dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="10dp"
+                        android:text="MAR"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="13dp"
+                        app:fontFamily="@font/prompt" />
+
+                    <TextView
+                        android:id="@+id/march_label22"
+                        android:layout_width="85dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="27dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="10dp"
+                        android:text="Wednesday"
+                        android:textColor="#858585  "
+                        android:textSize="13dp"
+                        app:fontFamily="@font/work_sans" />
+
+                    <TextView
+                        android:id="@+id/march_act2_info"
+                        android:layout_width="245dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Gudi Padwa"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        app:fontFamily="@font/open_sans" />
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/apr"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/march"
+                >
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/apri_card"
+                    android:layout_width="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/but_diary"
+                    app:cardBackgroundColor="@color/colorPrimaryDark">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/but_diary">
+
+                        <TextView
+                            android:id="@+id/apri_subject"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="monospace"
+                            android:text="A P R I L  2 0 2 0 "
+                            android:textAlignment="center"
+                            android:textColor="#f0e68c"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            app:fontFamily="@font/roboto" />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/apri_act1"
+                    android:layout_width="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/but_diary"
+                    android:layout_below="@id/apri_card"
+                    app:cardBackgroundColor="#ffffff">
+
+                    <TextView
+                        android:id="@+id/apri_serial1"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="7dp"
+                        android:fontFamily="sans-serif"
+                        android:padding="5dp"
+                        android:text="01"
+                        android:textColor="#f0e68c"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/btn_circular_diary"/>
+
+                    <TextView
+                        android:id="@+id/apri_label11"
+                        android:layout_width="70dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="10dp"
+                        android:text="APR"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="13dp"
+                        app:fontFamily="@font/prompt" />
+
+                    <TextView
+                        android:id="@+id/apri_label12"
+                        android:layout_width="85dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="27dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="10dp"
+                        android:text="Wednesday"
+                        android:textColor="#858585  "
+                        android:textSize="13dp"
+                        app:fontFamily="@font/work_sans" />
+
+                    <TextView
+                        android:id="@+id/apri_act1_info"
+                        android:layout_width="245dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:text="End Sem Exam Starts"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        app:fontFamily="@font/open_sans" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/apri_act2"
+                    android:layout_width="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/but_diary"
+                    android:layout_below="@id/apri_act1"
+                    app:cardBackgroundColor="#ffffff">
+
+                    <TextView
+                        android:id="@+id/apri_serial2"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="7dp"
+                        android:fontFamily="sans-serif"
+                        android:padding="5dp"
+                        android:text="03"
+                        android:textColor="#f0e68c"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/btn_circular_holi"/>
+
+                    <TextView
+                        android:id="@+id/apri_label21"
+                        android:layout_width="70dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="10dp"
+                        android:text="APR"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="13dp"
+                        app:fontFamily="@font/prompt" />
+
+                    <TextView
+                        android:id="@+id/apri_label22"
+                        android:layout_width="80dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="27dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="10dp"
+                        android:text="Friday"
+                        android:textColor="#858585  "
+                        android:textSize="13dp"
+                        app:fontFamily="@font/work_sans" />
+
+                    <TextView
+                        android:id="@+id/apri_act2_info"
+                        android:layout_width="210dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="45dp"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="10dp"
+                        android:text="Good Friday"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        app:fontFamily="@font/open_sans" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/apri_act3"
+                    android:layout_width="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/but_diary"
+                    android:layout_below="@id/apri_act2"
+                    app:cardBackgroundColor="#ffffff">
+
+                    <TextView
+                        android:id="@+id/apri_serial3"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="7dp"
+                        android:fontFamily="sans-serif"
+                        android:padding="5dp"
+                        android:text="14"
+                        android:textColor="#f0e68c"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/btn_circular_holi"/>
+
+                    <TextView
+                        android:id="@+id/apri_label31"
+                        android:layout_width="70dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="10dp"
+                        android:text="APR"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="13dp"
+                        app:fontFamily="@font/prompt" />
+
+                    <TextView
+                        android:id="@+id/apri_label32"
+                        android:layout_width="80dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="27dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="10dp"
+                        android:text="Tuesday"
+                        android:textColor="#858585  "
+                        android:textSize="13dp"
+                        app:fontFamily="@font/work_sans" />
+
+                    <TextView
+                        android:id="@+id/apri_act3_info"
+                        android:layout_width="245dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Ambedkar Jayanti"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        app:fontFamily="@font/open_sans" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/apri_act4"
+                    android:layout_width="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/but_diary"
+                    android:layout_below="@id/apri_act3"
+                    app:cardBackgroundColor="#ffffff">
+
+                    <TextView
+                        android:id="@+id/apri_serial4"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="7dp"
+                        android:fontFamily="sans-serif"
+                        android:padding="5dp"
+                        android:text="17"
+                        android:textColor="#f0e68c"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/btn_circular_diary"/>
+
+                    <TextView
+                        android:id="@+id/apri_label41"
+                        android:layout_width="70dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="10dp"
+                        android:text="APR"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="13dp"
+                        app:fontFamily="@font/prompt" />
+
+                    <TextView
+                        android:id="@+id/apri_label42"
+                        android:layout_width="80dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="27dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="10dp"
+                        android:text="Friday"
+                        android:textColor="#858585  "
+                        android:textSize="13dp"
+                        app:fontFamily="@font/work_sans" />
+
+                    <TextView
+                        android:id="@+id/apri_act4_info"
+                        android:layout_width="245dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:text="End Sem Exam Ends"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        app:fontFamily="@font/open_sans" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/apri_act5"
+                    android:layout_width="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/but_diary"
+                    android:layout_below="@id/apri_act4"
+                    app:cardBackgroundColor="#ffffff">
+
+                    <TextView
+                        android:id="@+id/apri_serial5"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="7dp"
+                        android:fontFamily="sans-serif"
+                        android:padding="5dp"
+                        android:text="18"
+                        android:textColor="#f0e68c"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/btn_circular_holi"/>
+
+                    <TextView
+                        android:id="@+id/apri_label51"
+                        android:layout_width="70dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="10dp"
+                        android:text="APR"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="13dp"
+                        app:fontFamily="@font/prompt" />
+
+                    <TextView
+                        android:id="@+id/apri_label52"
+                        android:layout_width="80dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="27dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="10dp"
+                        android:text="Saturday"
+                        android:textColor="#858585  "
+                        android:textSize="13dp"
+                        app:fontFamily="@font/work_sans" />
+
+                    <TextView
+                        android:id="@+id/apri_act5_info"
+                        android:layout_width="245dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Vacation Starts"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        app:fontFamily="@font/open_sans" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/apri_act6"
+                    android:layout_width="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/but_diary"
+                    android:layout_below="@id/apri_act5"
+                    app:cardBackgroundColor="#ffffff">
+
+                    <TextView
+                        android:id="@+id/apri_serial6"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="7dp"
+                        android:fontFamily="sans-serif"
+                        android:padding="5dp"
+                        android:text="25"
+                        android:textColor="#f0e68c"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/btn_circular_diary"/>
+
+                    <TextView
+                        android:id="@+id/apri_label61"
+                        android:layout_width="70dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="10dp"
+                        android:text="APR"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="13dp"
+                        app:fontFamily="@font/prompt" />
+
+                    <TextView
+                        android:id="@+id/apri_label62"
+                        android:layout_width="80dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="27dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="10dp"
+                        android:text="Saturday"
+                        android:textColor="#858585  "
+                        android:textSize="13dp"
+                        app:fontFamily="@font/work_sans" />
+
+                    <TextView
+                        android:id="@+id/apri_act6_info"
+                        android:layout_width="245dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Parents Meeting"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        app:fontFamily="@font/open_sans" />
+
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.passwordnapoochiyo.schooltechno">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <activity android:name=".MarFragment" />
+        <activity android:name=".DecFragment" />
+        <activity android:name=".SepFragment" />
+        <activity android:name=".JunFragment" />
+
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="TechSchool"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".schooldashboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".setting_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".documentpage"
+            android:label="Document"
+            android:parentActivityName=".schooldashboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".examschedulepage"
+            android:label="Exam Schedule"
+            android:parentActivityName=".schooldashboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".examlist"
+            android:label="Exam Schedule"
+            android:parentActivityName=".examschedulepage"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".homeworkpage"
+            android:label="Homework"
+            android:parentActivityName=".schooldashboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".profile"
+            android:label="Profile"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".listdisplay"
+            android:label="Change Password"
+            android:parentActivityName=".schooldashboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".circularpage"
+            android:label="Circular"
+            android:parentActivityName=".schooldashboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".layout_circular_description"
+            android:label="Circular"
+            android:parentActivityName=".circularpage"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".gallarypage"
+            android:label="Gallery"
+            android:parentActivityName=".schooldashboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".gallarycontent"
+            android:label="Gallery Content"
+            android:parentActivityName=".gallarypage"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".gallarycontentimage"
+            android:label="Event Images"
+            android:parentActivityName=".gallarycontent"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".event_video"
+            android:label="Videos"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".feedbackpage"
+            android:label="Feedback"
+            android:parentActivityName=".schooldashboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".schoolfeespage"
+            android:label="School Fees"
+            android:parentActivityName=".schooldashboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".feesMainActivity"
+            android:label="School Fees"
+            android:parentActivityName=".schooldashboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".DocumentImage"
+            android:label="Document"
+            android:parentActivityName=".documentpage"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".AttendanceMainactivity"
+            android:label="Attendance"
+            android:parentActivityName=".schooldashboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".New_nav_header" />
+        <activity
+            android:name=".homework_image"
+            android:label="Homework"
+            android:parentActivityName=".homeworkpage"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".timetable_mainactivity"
+            android:label="Time Table"
+            android:parentActivityName=".schooldashboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".diary"
+            android:label="Diary"
+            android:parentActivityName=".schooldashboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".ResultMain"
+            android:label="Exams"
+            android:parentActivityName=".schooldashboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".Result"
+            android:label="Result"
+            android:parentActivityName=".ResultMain"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+             />
+    </application>
+
+</manifest>
